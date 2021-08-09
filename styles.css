@@ -6,7 +6,7 @@
 }
 body {
     background-image: url('images/hatter.jpg');
-    background-attachment:fixed;
+    /*background-attachment:fixed;*/
     background-size: 100% 100%;
     margin: 100px auto;
 }
@@ -64,12 +64,16 @@ main {
     display: block;
 }
 .title {
+    text-align: center;
+    padding-top: 5px;
     display: none;
     height: 30px;
     width: 100px;
     position: relative;
     top: -35px;
-    background: white;
+    background: gray;
+    border-radius: 5px;
+    border: 1px solid white;
 }
 
 .felirat {
