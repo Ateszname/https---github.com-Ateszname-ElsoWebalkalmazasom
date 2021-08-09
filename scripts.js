@@ -67,14 +67,15 @@ $('#jobboldal').click(() => {
 })
 
 for (let i = 0; i < adatok.length; i++) {
-    $(".kiskepek").append('<div class="kiskep"></div>');
+    $(".kiskepek").append('<div class="kiskep"><div class="title" id="#title'+i+'">'+adatok[i].cim+'</div></div>');
+    
     $('.kiskepek div:last-of-type').css('background-image','url('+adatok[i].kep+')');
     $('.kiskepek div:last-of-type').css('background-size','100%');
     $('.kiskepek div:last-of-type').css('box-shadow','10px 10px 10px black');
     $('.kiskepek div:last-of-type').attr('data-number',i);
     $('.kiskepek div:last-of-type').attr('id','kep'+i);
     //$('.kiskepek div:last-of-type').attr('title',adatok[i].cim);
-    //$('.kiskepek div:last-of-type').append('<div class="title" id="#title'+i+'">a</div>');
+    //$('#kep'+i).append('<div class="title" id="#title'+i+'">'+i+'</div>');
 }
 
 $('.kiskep').click((event) =>
